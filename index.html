@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Get Your Certificate</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172033;
+            background: #ffffff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 7%;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1264d8;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .login {
+            background: transparent;
+            color: #1264d8;
+        }
+
+        .register {
+            background: #1264d8;
+            color: white;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 90px 7%;
+            background: #f5f9ff;
+            gap: 50px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text small {
+            color: #1264d8;
+            font-weight: bold;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        .hero-text h1 span {
+            color: #1264d8;
+        }
+
+        .hero-text p {
+            font-size: 19px;
+            line-height: 1.6;
+            color: #5d6675;
+            margin-bottom: 30px;
+        }
+
+        .primary {
+            background: #1264d8;
+            color: white;
+            font-weight: bold;
+            padding: 15px 25px;
+        }
+
+        .course-highlight {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+            max-width: 360px;
+        }
+
+        .course-highlight h2 {
+            margin-bottom: 15px;
+        }
+
+        .course-highlight p {
+            color: #667085;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .courses {
+            padding: 80px 7%;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .courses > p {
+            color: #667085;
+            margin-bottom: 40px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .course-card {
+            text-align: left;
+            border: 1px solid #e6eaf0;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .course-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .course-card p {
+            color: #667085;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .course-card button {
+            background: #eef5ff;
+            color: #1264d8;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #101828;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        footer p {
+            margin-top: 10px;
+            color: #98a2b3;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .course-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-text h1 {
+                font-size: 38px;
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🎓 Get Your Certificate
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+        </nav>
+
+        <div class="buttons">
+            <button class="login">Log In</button>
+            <button class="register">Register</button>
+        </div>
+
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <small>LEARN. COMPLETE. GET CERTIFIED.</small>
+
+            <h1>
+                Online Courses for a
+                <span>Brighter Future</span>
+            </h1>
+
+            <p>
+                Learn new skills, complete your training
+                and get your certificate online.
+            </p>
+
+            <button class="primary">
+                Explore Courses →
+            </button>
+
+        </div>
+
+
+        <div class="course-highlight">
+
+            <h2>Manual Handling</h2>
+
+            <p>
+                Learn safe manual handling techniques
+                and improve workplace safety.
+            </p>
+
+            <button class="primary">
+                Start Course →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="courses">
+
+        <h2>Popular Courses</h2>
+
+        <p>
+            Start learning today and build your future.
+        </p>
+
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <h3>Manual Handling</h3>
+                <p>
+                    Learn safe lifting and manual handling
+                    practices.
+                </p>
+                <button>View Course →</button>
+            </div>
+
+
+            <div class="course-card">
+                <h3>Fire Safety</h3>
+                <p>
+                    Learn essential fire safety procedures
+                    for the workplace.
+                </p>
+                <button>View Course →</button>
+            </div>
+
+
+            <div class="course-card">
+                <h3>Food Safety</h3>
+                <p>
+                    Learn the fundamentals of workplace
+                    food safety.
+                </p>
+                <button>View Course →</button>
+            </div>
+
+
+            <div class="course-card">
+                <h3>Health & Safety</h3>
+                <p>
+                    Understand essential workplace
+                    health and safety principles.
+                </p>
+                <button>View Course →</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <h2>Get Your Certificate</h2>
+
+        <p>
+            Learn. Complete. Get Certified.
+        </p>
+
+    </footer>
+
+</body>
+</html>
