@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manual Handling Course | Get Your Certificate</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #f8fafc;
+        }
+
+        header {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: white;
+            border-bottom: 1px solid #e4e7ec;
+        }
+
+        .logo {
+            color: #1264d8;
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #344054;
+        }
+
+        .login {
+            background: white;
+            border: 1px solid #d0d5dd;
+            color: #1264d8;
+            padding: 11px 18px;
+            border-radius: 8px;
+        }
+
+        .register {
+            background: #1264d8;
+            color: white;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 8px;
+            margin-left: 8px;
+        }
+
+        .course-header {
+            background: #1264d8;
+            color: white;
+            padding: 70px 7%;
+        }
+
+        .course-header-content {
+            max-width: 800px;
+        }
+
+        .course-header small {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .course-header h1 {
+            font-size: 48px;
+            margin: 18px 0;
+        }
+
+        .course-header p {
+            font-size: 19px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .course-info {
+            display: flex;
+            gap: 30px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .course-info span {
+            font-size: 15px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e4e7ec;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 25px;
+        }
+
+        .card h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            color: #667085;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .learn-list {
+            list-style: none;
+        }
+
+        .learn-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eaecf0;
+        }
+
+        .learn-list li:last-child {
+            border-bottom: none;
+        }
+
+        .modules {
+            list-style: none;
+        }
+
+        .modules li {
+            display: flex;
+            justify-content: space-between;
+            padding: 18px;
+            margin-bottom: 10px;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+
+        .module-number {
+            color: #1264d8;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .enrol-card {
+            position: sticky;
+            top: 25px;
+        }
+
+        .enrol-card h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .start-button {
+            width: 100%;
+            background: #1264d8;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .enrol-card ul {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .enrol-card li {
+            padding: 10px 0;
+            color: #667085;
+        }
+
+        footer {
+            margin-top: 70px;
+            background: #101828;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        footer p {
+            color: #98a2b3;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                display: none;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .course-header h1 {
+                font-size: 38px;
+            }
+
+            .enrol-card {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🎓 Get Your Certificate
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+        </nav>
+
+        <div>
+            <button class="login">Log In</button>
+            <button class="register">Register</button>
+        </div>
+
+    </header>
+
+
+    <section class="course-header">
+
+        <div class="course-header-content">
+
+            <small>WORKPLACE SAFETY TRAINING</small>
+
+            <h1>
+                Manual Handling Course
+            </h1>
+
+            <p>
+                Learn the fundamentals of safe manual handling,
+                understand workplace risks and develop safer
+                working practices.
+            </p>
+
+            <div class="course-info">
+                <span>📚 Online Course</span>
+                <span>⏱️ Self-Paced</span>
+                <span>🎓 Certificate</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="container">
+
+        <div class="content">
+
+            <div>
+
+                <div class="card">
+
+                    <h2>
+                        About This Course
+                    </h2>
+
+                    <p>
+                        Manual handling is an important part of many
+                        workplaces. This course introduces learners to
+                        the principles of safe manual handling and
+                        helps them understand common workplace risks.
+                    </p>
+
+                    <p>
+                        You will learn how to identify hazards,
+                        understand safe lifting principles and reduce
+                        the risk of manual handling injuries.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h2>
+                        What You Will Learn
+                    </h2>
+
+                    <ul class="learn-list">
+
+                        <li>✓ Understand what manual handling means</li>
+
+                        <li>✓ Identify common manual handling risks</li>
+
+                        <li>✓ Understand common types of injuries</li>
+
+                        <li>✓ Learn basic safe lifting principles</li>
+
+                        <li>✓ Understand risk assessment principles</li>
+
+                        <li>✓ Apply safer manual handling practices</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h2>
+                        Course Content
+                    </h2>
+
+                    <ul class="modules">
+
+                        <li>
+                            <span>
+                                <span class="module-number">01</span>
+                                Introduction to Manual Handling
+                            </span>
+                            <span>›</span>
+                        </li>
+
+                        <li>
+                            <span>
+                                <span class="module-number">02</span>
+                                Understanding Manual Handling Risks
+                            </span>
+                            <span>›</span>
+                        </li>
+
+                        <li>
+                            <span>
+                                <span class="module-number">03</span>
+                                Manual Handling Injuries
+                            </span>
+                            <span>›</span>
+                        </li>
+
+                        <li>
+                            <span>
+                                <span class="module-number">04</span>
+                                Safe Lifting Techniques
+                            </span>
+                            <span>›</span>
+                        </li>
+
+                        <li>
+                            <span>
+                                <span class="module-number">05</span>
+                                Workplace Safety
+                            </span>
+                            <span>›</span>
+                        </li>
+
+                        <li>
+                            <span>
+                                <span class="module-number">06</span>
+                                Final Assessment
+                            </span>
+                            <span>›</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div class="card enrol-card">
+
+                    <h2>
+                        Start Learning
+                    </h2>
+
+                    <p>
+                        Complete the course online at your own pace.
+                    </p>
+
+                    <div class="price">
+                        Free
+                    </div>
+
+                    <button class="start-button">
+                        Start Course →
+                    </button>
+
+                    <ul>
+
+                        <li>✓ Online learning</li>
+
+                        <li>✓ Self-paced study</li>
+
+                        <li>✓ Course assessment</li>
+
+                        <li>✓ Certificate upon completion</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <h2>
+            Get Your Certificate
+        </h2>
+
+        <p>
+            Learn. Complete. Get Certified.
+        </p>
+
+    </footer>
+
+</body>
+</html>
