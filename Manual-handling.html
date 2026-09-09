@@ -230,6 +230,87 @@
                 position: static;
             }
         }
+
+        .module {
+            background: #fff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .module-header {
+            width: 100%;
+            border: none;
+            background: #f8fafc;
+            padding: 19px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            cursor: pointer;
+            font-size: 16px;
+            color: #172033;
+        }
+
+        .module-header:hover {
+            background: #f1f5f9;
+        }
+
+        .module-header b:first-child {
+            color: #1264d8;
+            margin-right: 10px;
+        }
+
+        .arrow {
+            color: #1264d8;
+            font-size: 20px;
+        }
+
+        .lessons {
+            display: none;
+            border-top: 1px solid #eaecf0;
+            background: white;
+        }
+
+        .module.open .lessons {
+            display: block;
+        }
+
+        .lessons a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 15px 20px 15px 45px;
+            color: #344054;
+            text-decoration: none;
+            border-bottom: 1px solid #f0f2f5;
+            font-size: 14px;
+        }
+
+        .lessons a:last-child {
+            border-bottom: none;
+        }
+
+        .lessons a:hover {
+            background: #f8fafc;
+            color: #1264d8;
+        }
+
+        .lessons a span {
+            color: #98a2b3;
+            min-width: 30px;
+        }
+
+        .lessons a b {
+            color: #1264d8;
+            font-weight: 600;
+        }
+
+        .final-module .module-header {
+            background: #eef5ff;
+        }
     </style>
 </head>
 
@@ -342,57 +423,85 @@
                         Course Content
                     </h2>
 
-                    <ul class="modules">
+                    <div class="module open">
+                        <button class="module-header" onclick="toggleModule(this)">
+                            <span><b>01</b> Introduction to Manual Handling</span>
+                            <span class="arrow">⌄</span>
+                        </button>
+                        <div class="lessons">
+                            <a href="Manual-handling-lesson-1-1.html"><span>1.1</span> What is Manual Handling? <b>→</b></a>
+                            <a href="Manual-handling-lesson-1-2.html"><span>1.2</span> Understanding Manual Handling Risks <b>→</b></a>
+                            <a href="Manual-handling-lesson-1-3.html"><span>1.3</span> Manual Handling Injuries <b>→</b></a>
+                            <a href="#"><span>1.4</span> Preventing Manual Handling Injuries <b>→</b></a>
+                        </div>
+                    </div>
 
-                        <li>
-                            <span>
-                                <span class="module-number">01</span>
-                                Introduction to Manual Handling
-                            </span>
-                            <span>›</span>
-                        </li>
+                    <div class="module">
+                        <button class="module-header" onclick="toggleModule(this)">
+                            <span><b>02</b> Risk Assessment &amp; TILE</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <div class="lessons">
+                            <a href="#"><span>2.1</span> Introduction to Risk Assessment <b>→</b></a>
+                            <a href="#"><span>2.2</span> Understanding TILE <b>→</b></a>
+                            <a href="#"><span>2.3</span> Task <b>→</b></a>
+                            <a href="#"><span>2.4</span> Individual <b>→</b></a>
+                            <a href="#"><span>2.5</span> Load <b>→</b></a>
+                            <a href="#"><span>2.6</span> Environment <b>→</b></a>
+                            <a href="#"><span>2.7</span> Applying TILE in the Workplace <b>→</b></a>
+                        </div>
+                    </div>
 
-                        <li>
-                            <span>
-                                <span class="module-number">02</span>
-                                Understanding Manual Handling Risks
-                            </span>
-                            <span>›</span>
-                        </li>
+                    <div class="module">
+                        <button class="module-header" onclick="toggleModule(this)">
+                            <span><b>03</b> Safe Lifting Techniques</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <div class="lessons">
+                            <a href="#"><span>3.1</span> Preparing to Lift <b>→</b></a>
+                            <a href="#"><span>3.2</span> Correct Lifting Technique <b>→</b></a>
+                            <a href="#"><span>3.3</span> Lifting and Carrying Safely <b>→</b></a>
+                            <a href="#"><span>3.4</span> Team Lifting <b>→</b></a>
+                            <a href="#"><span>3.5</span> Common Lifting Mistakes <b>→</b></a>
+                        </div>
+                    </div>
 
-                        <li>
-                            <span>
-                                <span class="module-number">03</span>
-                                Manual Handling Injuries
-                            </span>
-                            <span>›</span>
-                        </li>
+                    <div class="module">
+                        <button class="module-header" onclick="toggleModule(this)">
+                            <span><b>04</b> Pushing, Pulling &amp; Equipment</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <div class="lessons">
+                            <a href="#"><span>4.1</span> Pushing and Pulling <b>→</b></a>
+                            <a href="#"><span>4.2</span> Using Trolleys and Carts <b>→</b></a>
+                            <a href="#"><span>4.3</span> Mechanical Handling Equipment <b>→</b></a>
+                            <a href="#"><span>4.4</span> Safe Use of Workplace Equipment <b>→</b></a>
+                        </div>
+                    </div>
 
-                        <li>
-                            <span>
-                                <span class="module-number">04</span>
-                                Safe Lifting Techniques
-                            </span>
-                            <span>›</span>
-                        </li>
+                    <div class="module">
+                        <button class="module-header" onclick="toggleModule(this)">
+                            <span><b>05</b> Workplace Safety &amp; Irish Regulations</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <div class="lessons">
+                            <a href="#"><span>5.1</span> Manual Handling in the Workplace <b>→</b></a>
+                            <a href="#"><span>5.2</span> Employer and Employee Responsibilities <b>→</b></a>
+                            <a href="#"><span>5.3</span> Irish Health &amp; Safety Requirements <b>→</b></a>
+                            <a href="#"><span>5.4</span> Reporting Hazards and Injuries <b>→</b></a>
+                            <a href="#"><span>5.5</span> Creating a Safer Workplace <b>→</b></a>
+                        </div>
+                    </div>
 
-                        <li>
-                            <span>
-                                <span class="module-number">05</span>
-                                Workplace Safety
-                            </span>
-                            <span>›</span>
-                        </li>
-
-                        <li>
-                            <span>
-                                <span class="module-number">06</span>
-                                Final Assessment
-                            </span>
-                            <span>›</span>
-                        </li>
-
-                    </ul>
+                    <div class="module final-module">
+                        <button class="module-header" onclick="toggleModule(this)">
+                            <span><b>06</b> Final Assessment</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <div class="lessons">
+                            <a href="#"><span>🏆</span> Final Manual Handling Assessment <b>Start →</b></a>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -452,5 +561,14 @@
 
     </footer>
 
+
+<script>
+function toggleModule(button) {
+    const module = button.parentElement;
+    const arrow = button.querySelector('.arrow');
+    module.classList.toggle('open');
+    arrow.textContent = module.classList.contains('open') ? '⌄' : '›';
+}
+</script>
 </body>
 </html>
